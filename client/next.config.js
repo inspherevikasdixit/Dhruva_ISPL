@@ -23,6 +23,10 @@ const nextConfig = {
                 {
                   key: 'X-Content-Type-Options',
                   value: 'nosniff',
+                },
+                {
+                  key: 'Strict-Transport-Security',
+                  value: 'max-age=3571000; includeSubDomains; preload',
                 }
             ]
         }
