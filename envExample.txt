@@ -1,0 +1,73 @@
+# Backend
+JWT_SECRET_KEY="dhruvaDevEnvNotSoSecretKey"
+APP_DB_CONNECTION_STRING="mongodb://root:polestar&ai4bdb@app_db:27017"
+LOG_DB_CONNECTION_STRING="mongodb://root:polestar&ai4bdb@log_db:27017"
+APP_DB_NAME="dhruva"
+LOG_DB_NAME="dhruva"
+ENV=dev
+MIGRATION_ACTION="migrate"
+ADMIN_USER_PASSWORD="\$argon2id\$v=19\$m=65536,t=3,p=4\$BrEWsqDmPHokX6HMrNw0sA\$AptHD/1MTbt8OWnaSAAyugus2AuqvYmZ7zPk4tlCgFI"
+ 
+# Prometheus Aggregation gateway
+PAG_AUTHUSERS="gway_user=gateway_password"
+# Prometheus
+PROMETHEUS_URL = "http://prom-aggregation-gateway:80"
+PROM_AGG_GATEWAY_USERNAME = "gway_user"
+PROM_AGG_GATEWAY_PASSWORD = "gateway_password"
+# Grafana
+GRAFANA_ADMIN_USER=ai4bharat_admin
+GRAFANA_ADMIN_PASSWORD=polestar@ai4b
+GRAFANA_AUTH_TOKEN="glsa_oGa0UsL3a3K3tPhgGy9JqM0hV5To6niJ_65ae00e4"
+GRAFANA_SECURE_COOKIE=true
+ 
+SLACK_MONITORING_CHANNEL=dhruva-devops
+ 
+RABBITMQ_DEFAULT_USER=admin
+RABBITMQ_DEFAULT_PASS=admin
+RABBITMQ_DEFAULT_VHOST=dhruva_host
+# Celery
+CELERY_BROKER_URL = "pyamqp://admin:admin@rabbitmq_server:5672/dhruva_host"
+ 
+# Cache
+REDIS_HOST = "redis"
+REDIS_PORT = 6379
+REDIS_PASSWORD = ""
+REDIS_DB = 0
+ 
+# Celery Flower
+CELERY_FLOWER_BROKER_API = "http://admin:admin@rabbithost:15672/api/"
+CELERY_FLOWER_ADDRESS = "0.0.0.0"
+CELERY_FLOWER_PORT = 5555
+FLOWER_LOGGING_LEVEL = "DEBUG"
+ 
+# Frontend
+NEXT_PUBLIC_API_KEY="16e16551-7d87-45b2-90ad-a5b91c48e8d6"
+NEXT_PUBLIC_BACKEND_API_URL="https://api.dhruva.co"
+NEXT_PUBLIC_GRAFANA_URL="https://grafana.dhruva.co"
+ 
+BACKEND_PORT=8000
+FRONTEND_PORT=3000
+BACKEND_WORKERS=2
+LOG_REQUEST_RESPONSE_DATA_FLAG="cambridge analytica"
+ 
+MONGO_APP_DB_USERNAME=root
+MONGO_APP_DB_PASSWORD="polestar&ai4bdb"
+MONGO_LOG_DB_USERNAME=root
+MONGO_LOG_DB_PASSWORD="polestar&ai4bdb"
+
+ 
+ADMIN_MONGO_PASSWORD=polestar@admin-mongo
+HEARTBEAT_API_KEY=nNYf4dO184xBNieQTWQ7xIkHinDshXNLgwkee8d1n2b4Re4HDdB9eF0DBXU5lUqh
+ 
+# Logs
+AZURE_CLIENT_ID=
+AZURE_CLIENT_SECRET=
+AZURE_TENANT_ID=
+BLOB_STORE=
+TIMESCALE_PASSWORD=polestar&timescale
+TIMESCALE_USER=dhruva
+TIMESCALE_DATABASE_NAME=metering
+TIMESCALE_HOST=timescaledb
+TIMESCALE_PORT=5432
+ITN_ENDPOINT=indic-punct-itn-t4.centralindia.inference.ml.azure.com
+ITN_ENDPOINT_API_KEY=he3FOpfAOdXIlWcKOziGr8fm54sUe5Jg
